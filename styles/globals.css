@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  height: 100%;
+}
+
+/* CSS variables matching Tailwind color tokens for non-Tailwind usage */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  /* PRIMARY */
+  --color-primary: #4BABF5;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+  /* SECONDARY */
+  --color-secondary: #1F2A37;
+  --color-secondary-light: #4B5563;
+  --color-secondary-dark: #1F2A37;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* ACCENT */
+  --color-accent: #6B7280;
+
+  /* NEUTRAL */
+  --color-neutral: #F3F4F6;
+  --color-neutral-background: #F3F4F6;
+  --color-neutral-offwhite: #FFFFFF;
 }
