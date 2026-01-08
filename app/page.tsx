@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import barnettsGarageDoorsLogo from '../public/images/barnetts-garage-doors.png';
+
 export default function HomePage() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-neutral-offwhite">
