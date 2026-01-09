@@ -26,19 +26,19 @@ const Footer: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Barnett's Garage Doors",
-            "image": "https://buck-creek-taxidermy.com/images/barnetts-garage-doors.webp",
+            "image": "https://BarnettsGarageDoors.com/images/barnetts-garage-doors.webp",
             "url": "https://BarnettsGarageDoors.com",
             "telephone": "+1-765-499-3971",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "303 E 4th St",
+              "streetAddress": "1319 S Jefferson St",
               "addressLocality": "Hartford City",
               "addressRegion": "IN",
               "postalCode": "47348",
               "addressCountry": "US"
             },
             "sameAs": [
-              "https://www.facebook.com/people/Buck-Creek-Taxidermy/61566619964495/"
+              "https://www.facebook.com/p/Barnetts-garage-doors-61575573969998/"
             ]
           }),
         }}
@@ -97,11 +97,11 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-2 justify-center md:justify-end">
               <FaEnvelope className="text-primary text-[1.1rem] sm:text-[1.15rem] lg:text-[1.2rem] 2xl:text-[1.25rem]" />
               <a
-                href="mailto:Chaston0827@gmail.com"
+                href="mailto:TBarnett1988@gmail.com"
                 className="text-[1.1rem] sm:text-[1.15rem] lg:text-[1.2rem] 2xl:text-[1.25rem] hover:text-accent"
                 aria-label="Email Barnett's Garage Doors"
               >
-                Chaston0827@gmail.com
+                TBarnett1988@gmail.com
               </a>
             </div>
           </address>
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
           {/* Socials */}
           <nav aria-label="Social Links" className="flex gap-4 mt-4">
             <a
-              href="https://www.facebook.com/people/Buck-Creek-Taxidermy/61566619964495/"
+              href="https://www.facebook.com/p/Barnetts-garage-doors-61575573969998/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-primary hover:bg-accent transition"
@@ -123,7 +123,7 @@ const Footer: React.FC = () => {
 
       {/* ===== Bottom Bar ===== */}
       <div className="w-full bg-black/50 text-center py-4 text-xs text-gray-400">
-        © {new Date().getFullYear()} Buck Creek Taxidermy | All rights reserved.
+        © {new Date().getFullYear()} Barnett's Garage Doors | All rights reserved.
       </div>
       <div className="w-full bg-black/50 text-center pb-2 text-xs text-gray-400">
         Designed by{" "}
