@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import barnettsGarageDoorsLogo from "../public/images/barnetts-garage-doors.png";
 import Contact from "../components/ContactForm";
+import GarageDoorGrid from "../components/GarageDoorsGrid";
 
 export default function HomePage() {
   const [showContact, setShowContact] = useState(false);
@@ -47,21 +48,25 @@ export default function HomePage() {
             <Image
               src={barnettsGarageDoorsLogo}
               alt="Barnett's Garage Doors Logo"
-              width={700}
-              height={700}
+              width={750}
+              height={750}
               priority
               className="object-contain"
             />
           </div>
         )}
 
-        {/* Mobile Contact Form (below hero) */}
+
         {showContact && (
           <section className="md:hidden w-full px-6 py-12">
             <Contact />
           </section>
         )}
 
+      </section>
+      <section>
+        {/* Garage Doors Grid */}
+        <GarageDoorGrid />
       </section>
     </main>
   );
