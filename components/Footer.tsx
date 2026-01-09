@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
             />
           </Link>
           <p className="text-md italic font-semibold text-gray-300">
-            Garage Doors. Done Right.
+            Garage Doors. Done Right!
           </p>
         </div>
 

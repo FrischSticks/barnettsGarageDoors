@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from 'react';
-import Image from 'next/image';
-import barnettsGarageDoorsLogo from '../public/images/barnetts-garage-doors.png';
-import Contact from '../components/ContactForm';
+import { useState } from "react";
+import Image from "next/image";
+import barnettsGarageDoorsLogo from "../public/images/barnetts-garage-doors.png";
+import Contact from "../components/ContactForm";
 
 export default function HomePage() {
   const [showContact, setShowContact] = useState(false);
@@ -11,47 +11,57 @@ export default function HomePage() {
   return (
     <main className="w-full bg-neutral-offwhite">
       {/* Hero Section */}
-      <section className="h-screen w-full flex items-center justify-between overflow-hidden relative">
-        {/* Left Content Section */}
-        <div className="flex-1 flex flex-col justify-center pl-12 pr-8">
-          <h1 className="text-[6rem] font-bold text-text-primary leading-tight mb-4">
+      <section className="min-h-screen w-full flex flex-col md:flex-row items-center relative overflow-hidden">
+
+        {/* Left Content */}
+        <div className="flex-1 md:w-2/5 flex flex-col justify-center items-center px-6 md:pl-12 md:pr-8">
+          <h1 className="text-[3rem] md:text-[4rem] lg:text-[6rem] font-bold text-text-primary leading-tight mb-4 mt-20 md:mt-0">
             Garage Doors.
             <br />
-            Done Right.
+            Done Right!
           </h1>
-          
-          <p className="text-4xl text-text-secondary mb-8 font-medium">
+
+          <p className="text-xl md:text-4xl text-text-secondary mb-12 font-medium">
             Installation ● Maintenance ● Repair
           </p>
-          
+
           {!showContact && (
-            <button 
+            <button
               onClick={() => setShowContact(true)}
-              className="px-12 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-accent transition-colors text-lg uppercase"
+              className="w-full px-12 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-accent transition-colors text-lg uppercase"
             >
               Get Quote
             </button>
           )}
         </div>
 
-        {/* Right Image Section */}
-        <div className="flex-1 flex items-center justify-center pr-12 pl-8 h-full relative">
-          <Image
-            src={barnettsGarageDoorsLogo}
-            alt="Barnett's Garage Doors Logo"
-            width={700}
-            height={700}
-            priority
-            className="object-contain"
-          />
-          
-          {/* Contact Form Overlay */}
-          {showContact && (
-            <div className="absolute inset-0 flex items-center justify-center">
-                <Contact />
-            </div>
-          )}
-        </div>
+        {/* RIGHT SIDE — DESKTOP ONLY */}
+        {showContact ? (
+          /* Contact form (md+) */
+          <div className="hidden md:flex md:w-3/5 items-center justify-center px-6 md:px-12">
+            <Contact />
+          </div>
+        ) : (
+          /* Image (md+ ONLY — no mobile render at all) */
+          <div className="hidden md:flex flex-1 items-center justify-center px-6 md:px-12">
+            <Image
+              src={barnettsGarageDoorsLogo}
+              alt="Barnett's Garage Doors Logo"
+              width={700}
+              height={700}
+              priority
+              className="object-contain"
+            />
+          </div>
+        )}
+
+        {/* Mobile Contact Form (below hero) */}
+        {showContact && (
+          <section className="md:hidden w-full px-6 py-12">
+            <Contact />
+          </section>
+        )}
+
       </section>
     </main>
   );
