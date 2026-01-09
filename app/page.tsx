@@ -6,6 +6,7 @@ import barnettsGarageDoorsLogo from "../public/images/barnetts-garage-doors.png"
 import garageDoorRemoteOpener from "../public/images/garage-door-remote-opener.png";
 import Contact from "../components/ContactForm";
 import GarageDoorGrid from "../components/GarageDoorsGrid";
+import Testimonials from "../components/Testimonials";
 
 export default function HomePage() {
   const [showContact, setShowContact] = useState(false);
@@ -124,48 +125,87 @@ export default function HomePage() {
         <GarageDoorGrid />
       </section>
 
-      <section className="w-full px-6 md:px-12 py-20">
-        {/* Image floats LEFT on desktop */}
-        <div className="md:float-left md:w-1/2 lg:w-1/3 xl:w-1/4 md:mr-10 mb-6">
-          <Image
-            src={garageDoorRemoteOpener}
-            alt="Garage Door Remote Opener"
-            className="w-full h-auto object-contain"
-            priority
-          />
-        </div>
+<section className="w-full px-6 md:px-12 py-20">
 
-        {/* ONE continuous text block */}
-        <div className="text-lg md:text-xl text-text-secondary space-y-4">
-                  <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
-          REMOTE OPENERS
-        </h2>
-          <p>
-            We specialize in diagnosing and servicing garage door openers to keep your system
-            running smoothly and reliably. Whether your opener is struggling to lift, making
-            unusual noises, or not responding at all, we provide efficient repairs that restore
-            safe and dependable operation.
-          </p>
+  {/* Desktop Image — floats LEFT */}
+  <div className="hidden md:block md:float-left md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 md:mr-10 mb-6">
+    <Image
+      src={garageDoorRemoteOpener}
+      alt="Garage Door Remote Opener"
+      className="w-full h-auto object-contain"
+      priority
+    />
+  </div>
 
-          <p>
-            Routine maintenance plays a key role in extending the life of your garage door
-            opener. Our maintenance services help prevent unexpected breakdowns by addressing
-            worn components, alignment issues, and performance concerns before they become
-            costly problems.
-          </p>
+  {/* ONE continuous text block */}
+  <div className="text-lg md:text-xl text-text-secondary space-y-4">
+    <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
+      REMOTE OPENERS
+    </h2>
 
-          <p>
-            When repair is no longer the best option, we offer professional opener replacement
-            and upgrades. We’ll help you choose a solution that fits your needs — whether that
-            means improved reliability, quieter operation, modern safety features, or smart
-            technology integration — and ensure it’s installed correctly the first time.
-          </p>
-        </div>
+    <p>
+      We specialize in diagnosing and servicing garage door openers to keep your system
+      running smoothly and reliably. Whether your opener is struggling to lift, making
+      unusual noises, or not responding at all, we provide efficient repairs that restore
+      safe and dependable operation.
+    </p>
 
-        {/* Clear float so next section behaves */}
-        <div className="clear-both" />
+      {/* Mobile Image — bottom only */}
+  <div className="md:hidden w-2/3 justify-center flex mx-auto my-4 mb-8">
+    <Image
+      src={garageDoorRemoteOpener}
+      alt="Garage Door Remote Opener"
+      className="w-full h-auto object-contain"
+    />
+  </div>
 
-      </section>
+    <p>
+      Routine maintenance plays a key role in extending the life of your garage door
+      opener. Our maintenance services help prevent unexpected breakdowns by addressing
+      worn components, alignment issues, and performance concerns before they become
+      costly problems.
+    </p>
+
+    <p>
+      When repair is no longer the best option, we offer professional opener replacement
+      and upgrades. We’ll help you choose a solution that fits your needs — whether that
+      means improved reliability, quieter operation, modern safety features, or smart
+      technology integration — and ensure it’s installed correctly the first time.
+    </p>
+  </div>
+
+  {/* Clear float so next section behaves */}
+  <div className="clear-both" />
+
+</section>
+
+<section className="w-full px-6 md:px-12 py-20">
+  <div className="text-lg md:text-xl text-text-secondary space-y-4">
+    <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
+      GARAGE DOOR MAINTENANCE & REPAIR
+    </h2>
+
+    <p>
+      Our team provides expert garage door services tailored to your needs. From routine
+      maintenance to full system upgrades, we ensure your doors operate safely and reliably.
+    </p>
+
+    <p>
+      We focus on transparency and quality in every project. Our goal is to offer services
+      that homeowners can trust, with clear communication, fair pricing, and workmanship
+      that stands the test of time.
+    </p>
+
+    <p>
+      This section is flexible and intended to highlight any text-based content you want
+      your customers to read. Use it to emphasize your unique strengths, customer
+      guarantees, or any other message that sets your business apart.
+    </p>
+  </div>
+</section>
+<Testimonials />
+
+
 
     </main>
   );
