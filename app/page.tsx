@@ -66,7 +66,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= ABOUT US ================= */}
-      <section className="w-full px-6 md:px-12 py-20 md:py-28">
+      <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28">
         <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
           ABOUT US
         </h2>
@@ -111,7 +111,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= GARAGE DOOR GRID ================= */}
-      <section className="w-full px-6 md:px-12 py-20 md:py-28">
+      <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28">
         <h2 className="text-4xl md:text-5xl font-bold text-text-primary flex justify-center">
           FIND YOUR NEXT GARAGE DOOR
         </h2>
@@ -120,7 +120,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= REMOTE OPENERS ================= */}
-      <section className="w-full px-6 md:px-12 py-20 md:py-28">
+      <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28">
         <div className="hidden md:block md:float-left md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 md:mr-10 mb-6">
           <Image
             src={garageDoorRemoteOpener}
@@ -168,7 +168,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= MAINTENANCE & REPAIR ================= */}
-      <section className="w-full px-6 md:px-12 py-20 md:py-28 mb-28">
+      <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28 mb-28">
         <div className="text-lg md:text-xl text-text-secondary space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
             GARAGE DOOR MAINTENANCE & REPAIR
@@ -194,12 +194,12 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-
+      {/* ================= TESTIMONIALS ================= */}
       <Testimonials />
 
       {/* ================= BOTTOM CONTACT CTA ================= */}
-      <section className="w-full px-6 md:px-12 py-20 md:py-28 bg-primary mt-60">
-        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+      <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28 bg-primary mt-60">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
 
           {/* Text */}
           <div className="text-white space-y-6 lg:col-span-2">
@@ -218,7 +218,6 @@ export default function HomePage() {
           <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 lg:col-span-3">
             <Contact />
           </div>
-
         </div>
       </section>
     </main>

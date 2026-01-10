@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
   }, [hovered, startAutoRotate]);
 
   return (
-    <section className="w-full max-w-screen mx-auto box-border">
+    <section className="w-full max-w-screen mx-auto box-border px-12 md:px-24 lg:px-28">
       <div
         ref={containerRef}
         className="w-full h-full mx-auto bg-gray-50 border-8 border-secondary-dark shadow-xl shadow-secondary-dark rounded-4xl p-6 md:p-10 lg:p-12 flex flex-col items-center justify-center text-center transition-all duration-500"
