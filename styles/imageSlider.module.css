@@ -1,0 +1,85 @@
+.mainContainer {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* keeps it centered */
+    overflow: hidden;
+}
+
+.displayImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 3 / 4; /* keeps shape consistent (450x600 = 3:4) */
+    border-radius: 7.5%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.rightArrow, .leftArrow {
+    background-color: rgba(245, 245, 245, 0.25);
+    width: fit-content;
+    block-size: fit-content;
+    border-radius: 30%;
+    padding: 5px;
+    margin: 0 3%;
+    transition: transform 0.2s ease;
+}
+
+.rightArrow:hover, .leftArrow:hover {
+    transform: scale(1.07);
+    background-color: rgba(245, 245, 245, 0.5);
+    cursor: pointer;
+}
+
+.rxDots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.rxDot {
+    margin: 0 3px;
+}
+
+.rxDot:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+.galleryBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(187, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 7px;
+    transition: transform 0.2s ease;
+}
+
+.galleryBtn:hover {
+    color: rgb(255, 220, 65);
+    transform: scale(1.1);
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .mainContainer {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .displayImage {
+        height: auto; /* let aspect ratio handle it */
+        border-radius: 5%;
+    }
+}

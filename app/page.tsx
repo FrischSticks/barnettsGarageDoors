@@ -9,6 +9,7 @@ import garageDoorRemoteOpener from "../public/images/garage-door-remote-opener.p
 import Contact from "../components/ContactForm";
 import GarageDoorGrid from "../components/GarageDoorsGrid";
 import Testimonials from "../components/Testimonials";
+import ImageSlider from "../components/ImageSlider";
 
 export default function HomePage() {
   const [showContact, setShowContact] = useState(false);
@@ -71,13 +72,9 @@ export default function HomePage() {
           ABOUT US
         </h2>
 
+        {/* ImageSlider styled like the removed image */}
         <div className="md:float-right md:w-2/5 md:ml-10 mb-6">
-          <Image
-            src={barnettsGarageDoorsLogo}
-            alt="Barnett's Garage Doors"
-            className="w-full h-auto object-contain"
-            priority
-          />
+          <ImageSlider />
         </div>
 
         <div className="text-lg md:text-xl text-text-secondary space-y-4">
@@ -110,13 +107,32 @@ export default function HomePage() {
         <div className="clear-both" />
       </section>
 
-      {/* ================= GARAGE DOOR GRID ================= */}
-      <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28">
-        <h2 className="text-4xl md:text-5xl font-bold text-text-primary flex justify-center">
-          FIND YOUR NEXT GARAGE DOOR
-        </h2>
+      {/* ================= MAINTENANCE & REPAIR ================= */}
+      <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28 mb-28">
+        <div className="text-lg md:text-xl text-text-secondary space-y-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
+            GARAGE DOOR MAINTENANCE & REPAIR
+          </h2>
 
-        <GarageDoorGrid />
+          <p>
+            Our team provides expert garage door services tailored to your needs. From
+            routine maintenance to full system upgrades, we ensure your doors operate
+            safely and reliably.
+          </p>
+
+          <p>
+            We focus on transparency and quality in every project. Our goal is to offer
+            services that homeowners can trust, with clear communication, fair pricing,
+            and workmanship that stands the test of time.
+          </p>
+
+          <p>
+
+
+            This section is flexible and intended to highlight any text-based content
+            you want your customers to read.
+          </p>
+        </div>
       </section>
 
       {/* ================= REMOTE OPENERS ================= */}
@@ -167,35 +183,17 @@ export default function HomePage() {
         <div className="clear-both" />
       </section>
 
-      {/* ================= MAINTENANCE & REPAIR ================= */}
-      <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28 mb-28">
-        <div className="text-lg md:text-xl text-text-secondary space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
-            GARAGE DOOR MAINTENANCE & REPAIR
-          </h2>
-
-          <p>
-            Our team provides expert garage door services tailored to your needs. From
-            routine maintenance to full system upgrades, we ensure your doors operate
-            safely and reliably.
-          </p>
-
-          <p>
-            We focus on transparency and quality in every project. Our goal is to offer
-            services that homeowners can trust, with clear communication, fair pricing,
-            and workmanship that stands the test of time.
-          </p>
-
-          <p>
-
-
-            This section is flexible and intended to highlight any text-based content
-            you want your customers to read.
-          </p>
-        </div>
-      </section>
       {/* ================= TESTIMONIALS ================= */}
       <Testimonials />
+
+      {/* ================= GARAGE DOOR GRID ================= */}
+      <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28">
+        <h2 className="text-4xl md:text-5xl font-bold text-text-primary flex justify-center">
+          FIND YOUR NEXT GARAGE DOOR
+        </h2>
+
+        <GarageDoorGrid />
+      </section>
 
       {/* ================= BOTTOM CONTACT CTA ================= */}
       <section className="w-full px-12 md:px-24 lg:px-28 py-20 md:py-28 bg-primary mt-60">
@@ -215,7 +213,7 @@ export default function HomePage() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 lg:col-span-3">
+          <div className="lg:col-span-3">
             <Contact />
           </div>
         </div>

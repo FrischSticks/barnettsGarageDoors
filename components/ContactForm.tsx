@@ -92,7 +92,7 @@ const Contact = () => {
         }
       `}</style>
 
-      <div className="w-full p-10 border-l-8 border-accent fade-in">
+      <div className="w-full p-10 fade-in">
         <form
           id="contactForm"
           onSubmit={handleSubmit(submitForm)}
