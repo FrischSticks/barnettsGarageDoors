@@ -8,38 +8,20 @@ const garageDoors = [
   {
     title: "Raised Panel Doors",
     description: "A timeless garage door style that blends durability with curb appeal.",
-    imageSrc: "/images/doors/raised-panel.jpg",
+    imageSrc: "/images/raised-panel-garage-door-base.png",
     href: "/garage-doors/raised-panel",
     badge: "Most Popular ⭐"
   },
   {
     title: "Carriage House Doors",
     description: "Old-world charm with modern materials and smooth operation.",
-    imageSrc: "/images/doors/carriage-house.jpg",
+    imageSrc: "/images/carriage-house-garage-door-base.png",
     href: "/garage-doors/carriage-house",
   },
   {
     title: "Modern Flush Doors",
     description: "Clean lines and contemporary design for modern homes.",
-    imageSrc: "/images/doors/flush.jpg",
-    href: "/garage-doors/modern",
-  },
-  {
-    title: "Raised Panel Doors",
-    description: "A timeless garage door style that blends durability with curb appeal.",
-    imageSrc: "/images/doors/raised-panel.jpg",
-    href: "/garage-doors/raised-panel",
-  },
-  {
-    title: "Carriage House Doors",
-    description: "Old-world charm with modern materials and smooth operation.",
-    imageSrc: "/images/doors/carriage-house.jpg",
-    href: "/garage-doors/carriage-house",
-  },
-  {
-    title: "Modern Flush Doors",
-    description: "Clean lines and contemporary design for modern homes.",
-    imageSrc: "/images/doors/flush.jpg",
+    imageSrc: "/images/flush-panel-garage-door-base.png",
     href: "/garage-doors/modern",
   },
 ];
