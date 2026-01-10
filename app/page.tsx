@@ -204,6 +204,30 @@ export default function HomePage() {
   </div>
 </section>
 <Testimonials />
+{/* Bottom Contact CTA — ALWAYS visible */}
+<section className="w-full px-6 md:px-12 py-24 bg-primary">
+  <div className="max-w-6xl mx-auto grid xl:grid-cols-2 gap-12 items-center">
+
+    {/* Text */}
+    <div className="text-white space-y-6">
+      <h2 className="text-4xl md:text-5xl font-bold">
+        Need Garage Door Service?
+      </h2>
+
+      <p className="text-lg md:text-xl text-white/90">
+        Whether you’re dealing with a broken door, need routine maintenance,
+        or are ready for a new installation, we’re here to help.
+        Request a quote today and we’ll take care of the rest.
+      </p>
+    </div>
+
+    {/* Contact Form */}
+    <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+      <Contact />
+    </div>
+  </div>
+</section>
+
 
 
 
